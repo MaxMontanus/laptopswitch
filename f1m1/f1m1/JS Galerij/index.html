@@ -1,0 +1,105 @@
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mooie meiden</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <article>
+        <h1>❤️Mooie meiden gallerij❤️</h1>
+        <img id="img" src="https://celebmafia.com/wp-content/uploads/2021/03/hannah-palmer-03-23-2021-10.jpg">
+    <p2>   
+        <div class="Button" onclick="onClickNext()"">❤️Volgende dame❤️</div>
+        <div class="Button" onclick="onClickPrevious()"">❤️Vorige dame❤️</div> 
+    </p2>
+    <p3> 
+        <div class="button" onclick="window.location.href='https://onlyfans.com';">❤️onlyfans❤️</button>
+    </p3>
+
+        <script>
+            var position = 0;
+            var img1 = "https://thefappeningtop.com/wp-content/uploads/2020/09/109733-Hilde-Osland-Cleavage-3-TheFappeningTop.com_.jpg"
+            var img2 = "https://www.barnorama.com/wp-content/uploads/2018/10/Sexy-Girls-40-1.jpg"
+            var img3 = "https://i.pinimg.com/1200x/8d/3b/e9/8d3be9ad019784e118dc9a23a845a1f9.jpg"
+            var img4 = "https://external-preview.redd.it/fAGJBn0gZwA9lBsLnWKl42F_EIKmPjcHW9R0JHg3JJo.png?auto=webp&s=f5f0d18ab1b460b02d3beae95d67f44ff5f7f21b"
+            var img5 = "https://celebnetworth.net/wp-content/uploads/2020/07/Mikayla-Demaiter-Net-Worth-1-1068x1334.jpg"
+            var img6 = "https://bestofcomicbooks.com/wp-content/uploads/2018/10/14-min-72.jpg"
+            var img7 = "https://external-preview.redd.it/1hcsWzUk2DwaDYnIdkxii0QQlSybvrTMF_ILIE3hZh8.jpg?width=640&crop=smart&auto=webp&s=00e4e377db37cf4e6624265d23935198b81a1141"
+            var img8 = "https://theviraler.com/wp-content/uploads/2019/09/girls-white-t-shirts-35-1.jpg"
+            var img9 = "https://i.pinimg.com/originals/0c/78/f0/0c78f0253af74ed41a4479bbdd6a44ed.jpg"
+            var img10 = "https://i.pinimg.com/736x/b3/ae/a8/b3aea872f0c5afc838033a478541b16e--beautiful-latina-beautiful-women.jpg"
+            var img11 = "https://i2.wp.com/www.hotcelebshome.com/wp-content/uploads/2020/01/Madison-Beer-Sexy-Ass-and-Camel-Toe-23.jpg"
+            var img12 = "https://media-manager.noticiasaominuto.com/gallery/1920/naom_5cbdf34d980c5.jpg"
+            var img13 = "https://i.pinimg.com/736x/81/1c/24/811c243c9c17171a72c3ae1ec1750d3f.jpg"
+            var img14 = "https://www.barnorama.com/wp-content/uploads/2019/04/Hot-Girls-29.jpg"
+            
+            var imgElement = document.getElementById("img");
+
+            function onClickNext(){
+                
+                position = position + 1;
+                
+                if (position == 14){
+                    position = 0;
+                }
+                setImage();
+            }
+            function onClickPrevious(){
+                position = position - 1;
+                
+                if (position == -1){
+                    position = 14;
+                }
+                setImage();          
+            }
+
+            function setImage(){
+                if(position == 0){
+                    imgElement.src = img1;
+                }
+                else if(position == 1){
+                    imgElement.src = img2;
+                }
+                else if(position == 2){
+                    imgElement.src = img3;
+                }
+                else if(position == 3){
+                    imgElement.src = img4;
+                }
+                else if(position == 4){
+                    imgElement.src = img5;
+                }
+                else if(position == 5){
+                    imgElement.src = img6;
+                }
+                else if(position== 6){
+                    imgElement.src = img7;
+                }
+                else if(position== 7){
+                    imgElement.src = img8;
+                }
+                else if(position== 8){
+                    imgElement.src = img9;
+                }
+                else if(position== 9){
+                    imgElement.src = img10;
+                }
+                else if(position== 10){
+                    imgElement.src = img11;
+                }
+                else if(position== 11){
+                    imgElement.src = img12;
+                }
+                else if(position== 12){
+                    imgElement.src = img13;
+                }
+                else if(position== 13){
+                    imgElement.src = img14;
+                }
+            }
+        </script>
+
+    </body>
+    </html>

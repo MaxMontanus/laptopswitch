@@ -1,0 +1,71 @@
+*, *::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #00b3ff;
+    font-family: 'comic sans', cursive;
+    font-size: 1.6rem;
+    font-family: 'Dancing Script', cursive;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+.postIt{
+    flex-shrink: 0;
+    width:40rem;
+    height:40rem;
+    position:relative;
+    transform-origin: top left;
+    transition: 2s transform;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 30rem, 30rem 100%,  0% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.postIt--first{
+    background:#00ff40; 
+}
+.postIt--second{
+    background:#eeff00; 
+}
+.postIt--third{
+    background:#ff0000; 
+}
+.postIt::after{
+    content:"";
+    width:10rem;
+    height:10rem;
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+.postIt--first::after{
+    background: #00cc33;
+}
+.postIt--second::after{
+    background:#b8c500;
+}
+.postIt--third::after{
+    background: #ce0000;
+}
+.postIt:hover{
+    transform: rotate(15deg);
+    transition: 0.5s transform;
+}
+h2{
+    font-size: 250%;
+    font-weight: 400;
+}
+@media screen and (max-width: 93.75rem){
+    .postIt:hover{
+        transform: none;
+    }
+}

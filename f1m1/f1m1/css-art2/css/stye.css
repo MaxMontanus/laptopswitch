@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+body{
+    min-height: 100vh;
+    background: #090910;
+    gap: 20px;
+}
+
+.eye{
+    width: 140px;
+    height: 260px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 10px 10px rgba(0,0,0,0.4);
+    position: relative;
+}
+
+.iris{
+    width: 80px;
+    height: 80px;
+    background: #fc0571 ;
+    background: linear-gradient(#780135, 40% , #fc0571);
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+
+}
+
+.pupil{
+    width: 65%;
+    height: 65%;
+    background: black;
+    border-radius: 50%;
+}
+
+.shimmering{
+    width: 30%;
+    height: 35%;
+    top: 10%;
+    right: 18%;
+    background: #ffffff;
+    position: absolute;
+    border-radius: 50%;
+    transform: rotate(130deg);
+    
+}
+
+/* Utilities */
+.u-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

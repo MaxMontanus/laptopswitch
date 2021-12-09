@@ -1,0 +1,11 @@
+body{
+    background-color: antiquewhite;
+
+}
+
+#koelkast{
+    background-color: darkgrey;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
